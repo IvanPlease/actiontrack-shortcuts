@@ -1,0 +1,53 @@
+{
+    "manifest_version": 2,
+    "name": "ActionTrack - Skróty Klawiszowe",
+    "version": "1.0.0",
+    "description": "Rozszerzenie dodające skróty klawiszowe dla platformy ActionTrack",
+    "icons": {
+        "16": "16x16.png",
+        "48": "48x48.png",
+        "128": "128x128.png"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://dallas.taz.fi/TAZActionTrackServer/game/template/view/*"],
+            "js": ["jquery-3.6.0.min.js", "content.js"]
+        }
+    ],
+    "commands": {
+        "save-project": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+S",
+                "mac": "Command+S"
+            },
+            "description": "Zapisz szablon"
+        },
+        "duplicate-checkpoint": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+X",
+                "mac": "Command+D"
+            },
+            "description": "Duplikuj aktywny checkpoint"
+        },
+        "delete-checkpoint": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Q",
+                "mac": "Ctrl+Delete"
+            },
+            "description": "Usuń aktywny checkpoint"
+        },
+        "cancel-edition": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Z",
+                "mac": "Ctrl+End"
+            },
+            "description": "Anuluj edycje"
+        }
+    },
+    "offline_enabled": true,
+    "permissions": ["https://dallas.taz.fi/TAZActionTrackServer/game/template/view/*"]
+}
