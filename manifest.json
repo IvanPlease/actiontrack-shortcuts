@@ -22,32 +22,38 @@
         "save-project": {
             "suggested_key": {
                 "default": "Ctrl+Shift+S",
-                "mac": "Command+S"
+                "mac": "Command+Shift+S"
             },
             "description": "Zapisz szablon"
         },
         "duplicate-checkpoint": {
             "suggested_key": {
                 "default": "Ctrl+Shift+X",
-                "mac": "Command+D"
+                "mac": "Command+Shift+X"
             },
             "description": "Duplikuj aktywny checkpoint"
         },
         "delete-checkpoint": {
             "suggested_key": {
                 "default": "Ctrl+Shift+Q",
-                "mac": "Ctrl+Delete"
+                "mac": "Command+Shift+Q"
             },
             "description": "Usuń aktywny checkpoint"
         },
         "cancel-edition": {
             "suggested_key": {
                 "default": "Ctrl+Shift+Z",
-                "mac": "Ctrl+End"
+                "mac": "Command+Shift+Z"
             },
             "description": "Anuluj edycje"
+        },
+        "new-checkpoint": {
+            "description": "Stwórz nowy checkpoint"
+        },
+        "new-connection": {
+            "description": "Stwórz nowe połączenie"
         }
     },
     "offline_enabled": true,
-    "permissions": ["https://dallas.taz.fi/TAZActionTrackServer/game/template/view/*"]
+    "permissions": ["https://dallas.taz.fi/"]
 }
